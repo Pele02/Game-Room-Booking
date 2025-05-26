@@ -12,6 +12,13 @@ A lightweight, calendar-based web app to manage game room bookings at work — d
 
 ---
 
+## UI/UX
+
+![Untitled 2](https://github.com/user-attachments/assets/0399b878-5929-44e9-afc9-2124366c26b7)
+
+
+---
+
 ## 📁 Project Structure
 
 game-room-booking/

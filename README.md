@@ -1,12 +1,34 @@
-# React + Vite
+# 🕹️ Game Room Booking App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A lightweight, calendar-based web app to manage game room bookings at work — designed for simplicity and speed. Users can select a game from the room (e.g., Foosball, PingPong or PS5), choose a time slot, and book it using only a nickname (no authentication required). Built using **React + Vite**, **Firebase Firestore**, and **FullCalendar** with the Resource Timeline view.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tech Stack
 
-## Expanding the ESLint configuration
+- **Frontend:** React (Vite)
+- **Calendar:** FullCalendar with Resource Timeline
+- **Backend/Database:** Firebase Firestore
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📁 Project Structure
+
+game-room-booking/
+├── public/
+│ └── index.html
+├── src/
+│ ├── components/
+│ │ ├── CalendarView.jsx # Calendar with resource-timeline view
+│ │ ├── BookingModal.jsx # Form to enter nickname, game, time
+│ │ └── BookingList.jsx # Optional: list of daily bookings
+│ ├── firebase/
+│ │ └── firebaseConfig.js # Firebase initialization
+│ ├── utils/
+│ │ └── dateUtils.js # Helper functions for time formatting
+│ ├── App.jsx # Main application logic
+│ ├── main.jsx # Vite entry point
+├── .env # Firebase config (excluded from Git)
+├── .gitignore
+├── vite.config.js
+└── README.md

@@ -15,20 +15,37 @@ A lightweight, calendar-based web app to manage game room bookings at work — d
 ## 📁 Project Structure
 
 game-room-booking/
+
 ├── public/
+
 │ └── index.html
+
 ├── src/
+
 │ ├── components/
+
 │ │ ├── CalendarView.jsx # Calendar with resource-timeline view
+
 │ │ ├── BookingModal.jsx # Form to enter nickname, game, time
+
 │ │ └── BookingList.jsx # Optional: list of daily bookings
+
 │ ├── firebase/
+
 │ │ └── firebaseConfig.js # Firebase initialization
+
 │ ├── utils/
+
 │ │ └── dateUtils.js # Helper functions for time formatting
+
 │ ├── App.jsx # Main application logic
+
 │ ├── main.jsx # Vite entry point
+
 ├── .env # Firebase config (excluded from Git)
+
 ├── .gitignore
+
 ├── vite.config.js
+
 └── README.md
